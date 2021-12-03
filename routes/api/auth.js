@@ -12,7 +12,6 @@ const User = require("../../models/User");
 // @desc     Test route
 // @access   Private
 router.get("/", auth, async (req, res) => {
-
   try {
     const user = await User.findById(req.user.id).select("-password");
     res.json(user);
@@ -65,7 +64,7 @@ router.post(
       jwt.sign(
         payload,
         config.get("jwtSecret"),
-        { expiresIn: 360000 },
+        { expiresIn: "15m" },
         (err, token) => {
           if (err) throw err;
           res.json({ token });

@@ -17,4 +17,15 @@ router.get("/", auth, async (req, res) => {
   }
 });
 
+router.post("/", auth, async (req, res) => {
+  try {
+    const tag = new Tag({ name: req.body.name });
+    await tag.save();
+    res.json(tag);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send("Server Error");
+  }
+});
+
 module.exports = router;

@@ -26,9 +26,8 @@ const Todo = ({ description, setModal }) => {
       e.target.name === 'tag' && tagId !== '5f5689a2d096a9b777ea4124'
         ? {
             ...formData,
-            tagId: e.target.options[e.target.options.selectedIndex].getAttribute(
-              'option-id'
-            ),
+            tagId:
+              e.target.options[e.target.options.selectedIndex].getAttribute('option-id'),
             tag: e.target.value
           }
         : { ...formData, [e.target.name]: e.target.value }
@@ -48,8 +47,6 @@ const Todo = ({ description, setModal }) => {
       <Card.Body>
         <Row className="d-flex justify-content-between align-items-center mb-5">
           <Card.Title>{description} Todo</Card.Title>
-
-          <Row className="d-flex justify-content-between flex-nowrap"></Row>
         </Row>
         <Form>
           <Form.Row>

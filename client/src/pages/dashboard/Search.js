@@ -14,7 +14,7 @@ const Search = () => {
   return (
     <Input
       type="text"
-      placeholder="search by tag"
+      placeholder="Search by tag"
       className="border-top-0 border-left-0 border-right-0"
       pClassName="ml-4"
       onChange={handleChange}

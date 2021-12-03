@@ -128,8 +128,7 @@ const TodoList = () => {
 
       {todos.length === 0 ? (
         <h2 className="m-5 lead">
-          {' '}
-          You don't have any todo. Click the button to add a todo!{' '}
+          You don't have any todo. Click the button to add a todo!
         </h2>
       ) : (
         <FlexTable

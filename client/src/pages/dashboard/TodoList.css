@@ -17,8 +17,8 @@
 }
 .add-todo-button {
   position: absolute;
-  top: 20px;
-  right: 10rem;
+  top: 5rem;
+  right: 4rem;
 }
 
 .todo-button:hover,

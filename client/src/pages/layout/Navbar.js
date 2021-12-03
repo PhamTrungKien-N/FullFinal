@@ -12,7 +12,7 @@ const Header = () => {
     <Navbar className="todo-app-navbar" collapseOnSelect expand="lg">
       <Container>
         <Navbar.Brand as={Link} to="/">
-          NTK
+          PTK
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
